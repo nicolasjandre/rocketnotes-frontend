@@ -7,4 +7,9 @@ export const Container = styled.span`
     margin-right: 6px;
     background: ${({theme}) => theme.COLORS.ORANGE};
     color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+    margin-bottom: 1rem;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `

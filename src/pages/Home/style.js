@@ -15,6 +15,11 @@ export const Container = styled.div`
     "newnote content";
 
     background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
+
+    @media (max-width: 540px) {
+        grid-template-columns: 15rem auto;
+        grid-template-rows: 10.5rem 12.8rem auto 6.4rem;
+    }
 `
 export const Brand = styled.div`
     grid-area: brand;
@@ -39,16 +44,31 @@ export const Menu = styled.ul`
 
     > li {
         margin-bottom: 2.4rem;
+
+        button {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 15rem;
+        }
     }
 `
 export const Search = styled.div`
     grid-area: search;
     padding: 6.4rem 6.4rem 0;
+
+    @media (max-width: 540px) {
+        padding: 6.4rem 1rem;
+    }
 `
 export const Content = styled.div`
     grid-area: content;
     padding: 0 6.4rem;
     overflow-y: auto;
+
+    @media (max-width: 540px) {
+        padding: 0 1rem;
+    }
 `
 export const NewNote= styled(Link)`
     grid-area: newnote;

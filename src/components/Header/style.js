@@ -14,6 +14,10 @@ export const Container = styled.header`
     align-items: center;
 
     padding: 0 8rem;
+
+    @media (max-width: 540px) {
+        padding: 0 1rem;
+    }
 `
 
 export const Profile = styled(Link)`
@@ -42,6 +46,22 @@ export const Profile = styled(Link)`
         }
     }
 
+    @media (max-width: 540px) {
+        > img {
+            width: 5rem;
+            height: 5rem;
+        }
+        > div {
+            span {
+                font-size: 1rem;
+            }
+
+            strong {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
 `
 
 export const Logout = styled.button`
@@ -51,5 +71,11 @@ export const Logout = styled.button`
     > svg {
         color: ${({theme}) => theme.COLORS.GRAY_100};
         font-size: 3.6rem;
+    }
+
+    @media (max-width: 540px) {
+        > svg {
+            font-size: 2.5rem;
+        }
     }
 `

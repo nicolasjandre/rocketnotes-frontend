@@ -22,6 +22,7 @@ export const Container = styled.div`
 export const Form = styled.form`
     max-width: 34rem;
     margin: -9.4rem auto 0;
+    padding: 0 1rem;
 
     > div:nth-child(4) {
         margin-top: 2.4rem;

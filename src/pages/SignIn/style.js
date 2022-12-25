@@ -35,6 +35,37 @@ export const Form = styled.form`
         margin-top: 12.4rem;
         color: ${({theme}) => theme.COLORS.ORANGE};
     }
+
+    @media (max-width: 560px) {
+        padding: 0 8rem;
+        width: 100%;
+
+        > h1 {
+        font-size: 3rem;
+        }
+
+        > h2 {
+            font-size: 2rem;
+            margin: 2.8rem 0;
+        }
+
+        > p {
+            font-size: 1.5rem;
+        }
+
+        > a {
+            margin-top: 3.4rem;
+        }
+    }
+    
+    @media (max-width: 410px) {
+        padding: 0 2rem;
+        width: 100%;
+
+        > h1 {
+        font-size: 3rem;
+        }
+    }
 `
 
 export const Background = styled.div`

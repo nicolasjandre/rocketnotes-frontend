@@ -20,5 +20,6 @@ export const Container = styled.button`
         width: 100%;
         display: flex;
         margin-top: 2.4rem;
+        flex-wrap: wrap;
     }
 `
