@@ -6,7 +6,7 @@ import { Container, Brand, Menu, Search, Content, NewNote } from './style'
 import { Header } from '../../components/Header'
 import { ButtonText } from '../../components/ButtonText'
 import { FiPlus, FiSearch } from 'react-icons/fi'
-import { Input } from '../../components/input'
+import { Input } from '../../components/Input'
 import { Section } from '../../components/Section'
 import { Note } from '../../components/Note'
 
