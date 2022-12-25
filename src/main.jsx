@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Routes } from './Routes'
+import { Routes } from './routes'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from './styles/global'
 import { AuthProvider } from './hooks/auth'
